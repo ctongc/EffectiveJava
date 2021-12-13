@@ -33,5 +33,6 @@ enum SingletonWithEnum {
     }
 }
 
+// @Singleton
 public class Item3Singleton {
 }
