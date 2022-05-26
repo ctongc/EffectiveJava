@@ -66,10 +66,11 @@ class NutritionFacts {
 }
 
 @Builder
-@Value
+@Value // @Value is similar to the @Data annotation, but it creates immutable objects
 class NutritionFactsWithLombok {
     @NonNull
     int servingSize;
+
     @NonNull
     int servings;
 
