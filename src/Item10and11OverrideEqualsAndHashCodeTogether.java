@@ -1,6 +1,4 @@
-import java.util.Objects;
-
-public class Item10and11OverrideEqualsAndHashCode {
+public class Item10and11OverrideEqualsAndHashCodeTogether {
 
     // @AutoValue - considering using Google's opensource framework
     static final class PhoneNumber {
@@ -43,8 +41,7 @@ public class Item10and11OverrideEqualsAndHashCode {
             /* Objects.hash runs slowly since it entail array creation to pass a variable number
              * of arguments, as well as boxing and unboxing if the arguments are of primitives */
             // return Objects.hash(areaCode, prefix, lineNum);
-
-
+            
             int result = hashCode; // lazily initialized cached hash code
 
             /* the value 31 was chosen because it is an odd prime
