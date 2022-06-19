@@ -1,6 +1,6 @@
 import java.util.Comparator;
 
-public class Item14ImplementComparable {
+public class Item14ImplementComparableForValueObject {
     static final class PhoneNumber implements Comparable<PhoneNumber> {
 
         private short areaCode;
